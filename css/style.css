@@ -380,13 +380,6 @@ body {
   font-weight: 700;
 }
 
-.DonationOption:hover {
-  cursor: pointer;
-  background-color: #639fab;
-  color: white;
-  border: 4px solid #639fab;
-}
-
 .SelectedOption {
   background-color: #e97cd7;
   color: #000000;

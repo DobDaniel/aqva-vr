@@ -282,12 +282,13 @@ body {
     border: 4px solid $main-color;
     border-radius: 0.5rem;
     font-weight: 700;
-    &:hover {
-        cursor: pointer;
-        background-color: $secondary-color;
-        color: white;
-        border: 4px solid $secondary-color;
-    }
+    // hover only on media query !!!
+    // &:hover {
+    //     cursor: pointer;
+    //     background-color: $secondary-color;
+    //     color: white;
+    //     border: 4px solid $secondary-color;
+    // }
 }
 .SelectedOption {
     background-color: $main-color;
