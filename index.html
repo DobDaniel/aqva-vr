@@ -226,14 +226,14 @@
                                         <fieldset class="DonationContent">
                                             <label class="DonationLabel">Choose how much you want to donate here:</label>
                                             <div class="StaticDonation">
-                                                <button class="DonationOption">1$</button>
-                                                <button class="DonationOption">5$</button>
-                                                <button class="DonationOption">20$</button>
-                                                <button class="DonationOption">100$</button>
+                                                <button id="option-1" class="DonationOption SelectedOption">1$</button>
+                                                <button id="option-2" class="DonationOption">5$</button>
+                                                <button id="option-3" class="DonationOption">20$</button>
+                                                <button id="option-4" class="DonationOption">100$</button>
                                             </div>
                                             <span class="AlternativeDonationText">or</span>
                                             <div class="CustomDonation">
-                                                <input class="DonationInput" placeholder="Enter your desired amount" />
+                                                <input class="DonationInput" id="custom-amount" placeholder="Enter your desired amount" />
                                             </div>
                                             <input type="submit" class="DonationSubmit" value="Donate" />
                                         </fieldset>
@@ -343,7 +343,7 @@
                                 <fieldset class="NewsletterContent">
                                     <label class="NewsletterTitle">Newsletter</label>
                                     <label class="NewsletterHeading">Stay up to date with all the AQVA update and news.</label>
-                                    <input class="NewsletterEmail" placeholder="Enter your email adress" />
+                                    <input id="newsletter-email" class="NewsletterEmail" placeholder="Enter your email adress" />
                                     <input type="submit" class="NewsletterSubmit" value="Subscribe" />
                                 </fieldset>
                             </form>
@@ -356,12 +356,13 @@
                     </section>
                     <section class="Work">
                         <h2 class="SectionTitle">Come work with us</h2>
-                        <span class="SectionLink" href="mailto: aqvahire@firm.com">aqvahire@firm.com</span>
-                        <span class="SectionLink" href="tel: 936-422-1237">tel: 936-422-1237</span>
+                        <a class="SectionLink" href="mailto: aqvahire@firm.com">aqvahire@firm.com</a>
+                        <a class="SectionLink" href="tel: 936-422-1237">tel: 936-422-1237</a>
                     </section>
                     <span class="Copyright">© 2021 aqva.vr All Rights Reserved</span>
                 </div>
             </footer>
         </div>
+        <script src="js/script.js"></script>
     </body>
 </html>

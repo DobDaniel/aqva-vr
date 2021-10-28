@@ -1,10 +1,10 @@
-$main-color: #E97CD7;
-$secondary-color: #639FAB;
+$main-color: #e97cd7;
+$secondary-color: #639fab;
 $text-color: #ffffff;
 $bg-color: #000000;
 
 @font-face {
-    font-family: 'Inter';
+    font-family: "Inter";
     src: local("Inter"), url("./assets/fonts/Inter-VariableFont_slnt,wght.woff2"), format("woff2");
     font-weight: 100 900;
     font-display: swap;
@@ -17,54 +17,62 @@ html {
     color: $text-color;
     font-size: 16px;
     line-height: 1.25rem;
-    
 }
-.no-show{
+.no-show {
     display: none;
 }
-body{
+body {
     background-color: $bg-color;
 }
-.Header{
-   
+.Header {
     margin-top: 24px;
 }
-.HeaderContainer{
+.HeaderContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 20px;
 }
-.LogoImage{
+.LogoImage {
+    filter: drop-shadow(6.62498px 4.41665px 2.20833px rgba(233, 124, 215, 0.5));
     width: 60px;
+    // background-color: black;
+    border-radius: 0.9rem;
     height: auto;
+    &:hover{
+        filter: invert(56%) sepia(39%) saturate(354%) hue-rotate(142deg) brightness(95%) contrast(92%) drop-shadow(6.62498px 4.41665px 2.20833px rgba(99, 159, 171, 0.5));
+    }
 }
-.ToggleNav{
+.ToggleNav {
     background: none;
     border: none;
+    &:hover{
+        cursor: pointer;
+        filter: invert(74%) sepia(78%) saturate(1735%) hue-rotate(276deg) brightness(97%) contrast(87%);
+    }
 }
-.Hero{
+.Hero {
     margin: 2rem 0;
 }
-.HeroContainer{
+.HeroContainer {
     margin: 0 20px;
 }
-.MainHeading{
+.MainHeading {
     line-height: 2.25rem;
     margin-bottom: 1rem;
     font-size: 2rem;
     font-weight: 700;
 }
-.HeroText{
+.HeroText {
     line-height: 1.375rem;
     margin-bottom: 1.5rem;
     font-size: 1rem;
     font-weight: 200;
 }
-.CTAContent{
-    margin-bottom: 1rem;    
+.CTAContent {
+    margin-bottom: 1rem;
 }
-.ButtonPrimary{
+.ButtonPrimary {
     display: inline-block;
     padding: 0.75rem 1.25rem;
     background-color: $secondary-color;
@@ -72,71 +80,79 @@ body{
     font-size: 1rem;
     font-weight: 700;
     border-radius: 0.5rem;
+    &:hover{
+        cursor: pointer;
+        background-color: $main-color;
+        color: $text-color;
+    }
 }
 
-.HeroImage{
-    display:flex;
+.HeroImage {
+    display: flex;
     align-items: center;
     justify-content: center;
 }
-.HeroImage img{
+.HeroImage img {
     width: 301px;
     height: auto;
 }
 
-.StepsContainer{
+.StepsContainer {
     margin: 0 20px;
 }
-.SectionTitle{
+.SectionTitle {
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 2rem;
 }
-.StepsContent{
+.StepsContent {
     display: flex;
 }
-.StepsFold{
+.StepsFold {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
 }
-.Step{
+.Step {
     display: flex;
     margin-bottom: 3rem;
 }
-.StepIcon{
+.StepIcon {
     padding-right: 1rem;
     width: 40px;
     height: auto;
 }
-.StepLink{
+.StepLink {
     text-decoration: none;
     color: $secondary-color;
     font-weight: 700;
+    &:hover{
+        cursor: pointer;
+        color: $main-color;
+    }
 }
 
-.StepText{
+.StepText {
     font-size: 1rem;
     line-height: 1.375rem;
 }
-.Gallery{
+.Gallery {
     margin-bottom: 2rem;
 }
-.GalleryContent{
+.GalleryContent {
     display: flex;
     flex-direction: column;
-
 }
-.ImageSlider{
+.ImageSlider {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.GalleryContainer{
+.GalleryContainer {
     margin: 0 20px;
 }
 
-.GalleryImage img{
+.GalleryImage img {
     width: 280px;
     height: auto;
     border-radius: 0.25rem;
@@ -148,17 +164,21 @@ body{
     align-self: center;
     color: inherit;
     text-decoration: none;
+    &:hover {
+        cursor: pointer;
+        color: $secondary-color;
+        font-weight: bold;
+    }
 }
-.TestimonialsContainer{
+.TestimonialsContainer {
     margin: 0 20px;
-    
 }
-.Testimonial{
+.Testimonial {
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
 }
-.TestimonialsGrid{
+.TestimonialsGrid {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 1rem;
@@ -176,18 +196,17 @@ body{
     font-weight: 200;
     text-align: right;
 }
-.CauseContainer{
+.CauseContainer {
     margin: 0 20px;
 }
 
-.OrganizationsText{
-    
+.OrganizationsText {
     line-height: 1.25rem;
     font-weight: 200;
     font-size: 1rem;
 }
 
-.OrganizationsGrid{
+.OrganizationsGrid {
     background-color: $text-color;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -199,60 +218,63 @@ body{
     border-radius: 0.5rem;
 }
 
-.Oceana img{
+.Oceana img {
     width: 111px;
     height: auto;
 }
-.NRDC img{
+.NRDC img {
     width: 68px;
     height: auto;
 }
-.OC img{
+.OC img {
     width: 111px;
     height: auto;
 }
-.SL img{
+.SL img {
     width: 88px;
     height: auto;
 }
 
-.SectionSubTitle{
+.SectionSubTitle {
     color: $main-color;
     font-weight: 700;
     font-size: 1.25rem;
     margin-bottom: 1rem;
 }
-.Donation{
+.Donation {
     margin-top: 2rem;
 }
-.DonationText{
+.DonationText {
     font-size: 1rem;
     line-height: 1.25rem;
     font-weight: 200;
     margin-bottom: 1rem;
 }
-.DonationContent{
+.DonationContent {
     display: flex;
     flex-direction: column;
 }
-.DonationLabel{
+.DonationLabel {
     font-size: 1rem;
     line-height: 1.25rem;
-    
 }
-.NGOList{
+.NGOList {
     color: $main-color;
     font-weight: 700;
     text-decoration: none;
+    &:hover {
+        cursor: pointer;
+        color: $secondary-color;
+    }
 }
 
-.StaticDonation{
+.StaticDonation {
     display: flex;
     justify-content: space-between;
     margin: 1rem 0;
 }
 
-.DonationOption{
+.DonationOption {
     background-color: inherit;
     width: 58px;
     height: 37px;
@@ -260,34 +282,52 @@ body{
     border: 4px solid $main-color;
     border-radius: 0.5rem;
     font-weight: 700;
+    &:hover {
+        cursor: pointer;
+        background-color: $secondary-color;
+        color: white;
+        border: 4px solid $secondary-color;
+    }
+}
+.SelectedOption {
+    background-color: $main-color;
+    color: $bg-color;
 }
 
-.AlternativeDonationText{
+.AlternativeDonationText {
     align-self: center;
     margin-bottom: 1rem;
 }
 
-.CustomDonation{
+.CustomDonation {
     align-self: center;
     width: 100%;
 }
 
-.DonationInput{
+.DonationInput {
+    color: $text-color;
     box-sizing: border-box;
     text-align: center;
     width: 100%;
     height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
     border: 4px solid $main-color;
     margin-bottom: 1rem;
     border-radius: 0.5rem;
     background-color: inherit;
-    &::placeholder{
+    &::placeholder {
         font-family: "Inter";
         color: $text-color;
+        opacity: 0.5;
+        font-weight: 400;
+    }
+    &:focus {
+        outline: none;
     }
 }
 
-.DonationSubmit{
+.DonationSubmit {
     width: fit-content;
     background-color: $main-color;
     border: none;
@@ -298,8 +338,13 @@ body{
     margin-bottom: 2rem;
     font-size: 1rem;
     font-weight: 700;
+    &:hover {
+        cursor: pointer;
+        background-color: $secondary-color;
+        color: white;
+    }
 }
-.CauseStats{
+.CauseStats {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
@@ -309,79 +354,87 @@ body{
     padding: 1rem 0;
     margin-bottom: 1rem;
 }
-.StatItem{
+.StatItem {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.FooterContainer{
+.FooterContainer {
     margin: 0 20px;
 }
-.FooterSection{
+.FooterSection {
     margin: 1rem 0;
 }
-.FooterGrid{
+.FooterGrid {
     display: grid;
     grid-template-columns: 1fr;
 }
-.FooterList{
+.FooterList {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.FooterHeading{
-    
+.FooterHeading {
     text-align: center;
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
-.FooterItem{
+.FooterItem {
     margin-bottom: 0.5rem;
 }
-.FooterLink{
+.FooterLink {
     color: $text-color;
     text-decoration: none;
     font-weight: 200;
     font-size: 1rem;
+    &:hover{
+        color: $main-color;
+    }
 }
 
-.NewsletterContent{
+.NewsletterContent {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 1rem 0;
 }
-.NewsletterTitle{
+.NewsletterTitle {
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
-.NewsletterHeading{
+.NewsletterHeading {
     align-self: flex-start;
     font-size: 1rem;
     font-weight: 200;
     margin-bottom: 1rem;
-
 }
-.NewsletterEmail{
+.NewsletterEmail {
+    color: $text-color;
     box-sizing: border-box;
     text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
     width: 100%;
     height: 50px;
     border: 4px solid $main-color;
     margin-bottom: 1rem;
     border-radius: 0.5rem;
     background-color: inherit;
-    &::placeholder{
+    &::placeholder {
         font-family: "Inter";
         color: $text-color;
+        opacity: 0.5;
+        font-weight: 400;
+    }
+    &:focus {
+        outline: none;
     }
 }
-.NewsletterSubmit{
-
+.NewsletterSubmit {
     background-color: $main-color;
     border: none;
     width: 100%;
@@ -391,14 +444,20 @@ body{
     margin-bottom: 2rem;
     font-size: 1rem;
     font-weight: 700;
+    &:hover {
+        cursor: pointer;
+        background-color: $secondary-color;
+        color: white;
+    }
 }
-.GetInTouch, .Work{
+.GetInTouch,
+.Work {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 1rem;
 }
-.SectionLink{
+.SectionLink {
     box-sizing: border-box;
     text-align: center;
     border: 4px solid $main-color;
@@ -411,8 +470,13 @@ body{
     font-weight: 700;
     text-decoration: none;
     color: $text-color;
+    &:hover{
+        background-color: $secondary-color;
+        border: 4px solid $secondary-color;
+        color: $bg-color;
+    }
 }
-.Copyright{
+.Copyright {
     display: block;
     width: 100%;
     text-align: center;

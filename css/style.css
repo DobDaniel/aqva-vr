@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Inter';
+  font-family: "Inter";
   src: local("Inter"), url("./assets/fonts/Inter-VariableFont_slnt,wght.woff2"), format("woff2");
   font-weight: 100 900;
   font-display: swap;
@@ -40,13 +40,27 @@ body {
 }
 
 .LogoImage {
+  -webkit-filter: drop-shadow(6.62498px 4.41665px 2.20833px rgba(233, 124, 215, 0.5));
+          filter: drop-shadow(6.62498px 4.41665px 2.20833px rgba(233, 124, 215, 0.5));
   width: 60px;
+  border-radius: 0.9rem;
   height: auto;
+}
+
+.LogoImage:hover {
+  -webkit-filter: invert(56%) sepia(39%) saturate(354%) hue-rotate(142deg) brightness(95%) contrast(92%) drop-shadow(6.62498px 4.41665px 2.20833px rgba(99, 159, 171, 0.5));
+          filter: invert(56%) sepia(39%) saturate(354%) hue-rotate(142deg) brightness(95%) contrast(92%) drop-shadow(6.62498px 4.41665px 2.20833px rgba(99, 159, 171, 0.5));
 }
 
 .ToggleNav {
   background: none;
   border: none;
+}
+
+.ToggleNav:hover {
+  cursor: pointer;
+  -webkit-filter: invert(74%) sepia(78%) saturate(1735%) hue-rotate(276deg) brightness(97%) contrast(87%);
+          filter: invert(74%) sepia(78%) saturate(1735%) hue-rotate(276deg) brightness(97%) contrast(87%);
 }
 
 .Hero {
@@ -78,11 +92,17 @@ body {
 .ButtonPrimary {
   display: inline-block;
   padding: 0.75rem 1.25rem;
-  background-color: #639FAB;
+  background-color: #639fab;
   color: #000000;
   font-size: 1rem;
   font-weight: 700;
   border-radius: 0.5rem;
+}
+
+.ButtonPrimary:hover {
+  cursor: pointer;
+  background-color: #e97cd7;
+  color: #ffffff;
 }
 
 .HeroImage {
@@ -143,8 +163,13 @@ body {
 
 .StepLink {
   text-decoration: none;
-  color: #639FAB;
+  color: #639fab;
   font-weight: 700;
+}
+
+.StepLink:hover {
+  cursor: pointer;
+  color: #e97cd7;
 }
 
 .StepText {
@@ -201,6 +226,12 @@ body {
       align-self: center;
   color: inherit;
   text-decoration: none;
+}
+
+.GalleryLink:hover {
+  cursor: pointer;
+  color: #639fab;
+  font-weight: bold;
 }
 
 .TestimonialsContainer {
@@ -286,7 +317,7 @@ body {
 }
 
 .SectionSubTitle {
-  color: #E97CD7;
+  color: #e97cd7;
   font-weight: 700;
   font-size: 1.25rem;
   margin-bottom: 1rem;
@@ -319,9 +350,14 @@ body {
 }
 
 .NGOList {
-  color: #E97CD7;
+  color: #e97cd7;
   font-weight: 700;
   text-decoration: none;
+}
+
+.NGOList:hover {
+  cursor: pointer;
+  color: #639fab;
 }
 
 .StaticDonation {
@@ -339,9 +375,21 @@ body {
   width: 58px;
   height: 37px;
   color: #ffffff;
-  border: 4px solid #E97CD7;
+  border: 4px solid #e97cd7;
   border-radius: 0.5rem;
   font-weight: 700;
+}
+
+.DonationOption:hover {
+  cursor: pointer;
+  background-color: #639fab;
+  color: white;
+  border: 4px solid #639fab;
+}
+
+.SelectedOption {
+  background-color: #e97cd7;
+  color: #000000;
 }
 
 .AlternativeDonationText {
@@ -359,12 +407,15 @@ body {
 }
 
 .DonationInput {
+  color: #ffffff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
   width: 100%;
   height: 50px;
-  border: 4px solid #E97CD7;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 4px solid #e97cd7;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   background-color: inherit;
@@ -373,28 +424,40 @@ body {
 .DonationInput::-webkit-input-placeholder {
   font-family: "Inter";
   color: #ffffff;
+  opacity: 0.5;
+  font-weight: 400;
 }
 
 .DonationInput:-ms-input-placeholder {
   font-family: "Inter";
   color: #ffffff;
+  opacity: 0.5;
+  font-weight: 400;
 }
 
 .DonationInput::-ms-input-placeholder {
   font-family: "Inter";
   color: #ffffff;
+  opacity: 0.5;
+  font-weight: 400;
 }
 
 .DonationInput::placeholder {
   font-family: "Inter";
   color: #ffffff;
+  opacity: 0.5;
+  font-weight: 400;
+}
+
+.DonationInput:focus {
+  outline: none;
 }
 
 .DonationSubmit {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  background-color: #E97CD7;
+  background-color: #e97cd7;
   border: none;
   width: 130px;
   border-radius: 0.5rem;
@@ -407,6 +470,12 @@ body {
   font-weight: 700;
 }
 
+.DonationSubmit:hover {
+  cursor: pointer;
+  background-color: #639fab;
+  color: white;
+}
+
 .CauseStats {
   display: -ms-grid;
   display: grid;
@@ -416,7 +485,7 @@ body {
       grid-template-rows: auto auto;
   grid-gap: 1rem;
   place-items: center;
-  background-color: #639FAB;
+  background-color: #639fab;
   padding: 1rem 0;
   margin-bottom: 1rem;
 }
@@ -483,6 +552,10 @@ body {
   font-size: 1rem;
 }
 
+.FooterLink:hover {
+  color: #e97cd7;
+}
+
 .NewsletterContent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -515,12 +588,15 @@ body {
 }
 
 .NewsletterEmail {
+  color: #ffffff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
   width: 100%;
   height: 50px;
-  border: 4px solid #E97CD7;
+  border: 4px solid #e97cd7;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   background-color: inherit;
@@ -529,25 +605,37 @@ body {
 .NewsletterEmail::-webkit-input-placeholder {
   font-family: "Inter";
   color: #ffffff;
+  opacity: 0.5;
+  font-weight: 400;
 }
 
 .NewsletterEmail:-ms-input-placeholder {
   font-family: "Inter";
   color: #ffffff;
+  opacity: 0.5;
+  font-weight: 400;
 }
 
 .NewsletterEmail::-ms-input-placeholder {
   font-family: "Inter";
   color: #ffffff;
+  opacity: 0.5;
+  font-weight: 400;
 }
 
 .NewsletterEmail::placeholder {
   font-family: "Inter";
   color: #ffffff;
+  opacity: 0.5;
+  font-weight: 400;
+}
+
+.NewsletterEmail:focus {
+  outline: none;
 }
 
 .NewsletterSubmit {
-  background-color: #E97CD7;
+  background-color: #e97cd7;
   border: none;
   width: 100%;
   border-radius: 0.5rem;
@@ -560,7 +648,14 @@ body {
   font-weight: 700;
 }
 
-.GetInTouch, .Work {
+.NewsletterSubmit:hover {
+  cursor: pointer;
+  background-color: #639fab;
+  color: white;
+}
+
+.GetInTouch,
+.Work {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -578,7 +673,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
-  border: 4px solid #E97CD7;
+  border: 4px solid #e97cd7;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   background-color: inherit;
@@ -588,6 +683,12 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: #ffffff;
+}
+
+.SectionLink:hover {
+  background-color: #639fab;
+  border: 4px solid #639fab;
+  color: #000000;
 }
 
 .Copyright {
