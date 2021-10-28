@@ -12,6 +12,7 @@ options.push(option_4);
 
 let setSelected = function (option, e) {
     e.preventDefault();
+    custom_amount.placeholder="Enter your desired amount"
     list = Array.from(option.classList);
     if (!list.includes("SelectedOption")) {
         for (let option of options) {
