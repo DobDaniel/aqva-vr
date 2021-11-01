@@ -118,7 +118,7 @@ body {
     border: none;
     &:hover{
         cursor: pointer;
-        filter: invert(74%) sepia(78%) saturate(1735%) hue-rotate(276deg) brightness(97%) contrast(87%);
+        // filter: invert(74%) sepia(78%) saturate(1735%) hue-rotate(276deg) brightness(97%) contrast(87%);
     }
     @media (min-width: 768px) {
         display: none;
