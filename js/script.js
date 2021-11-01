@@ -5,10 +5,28 @@ let option_4 = document.getElementById("option-4");
 let custom_amount = document.getElementById("custom-amount");
 let newsletter_email = document.getElementById('newsletter-email')
 let options = [];
+
+let nav = document.getElementById("nav")
+let nav_list = document.getElementById("nav-list")
+let hamburger = document.getElementById("hamburger")
+
+hamburger.addEventListener("click", function(e){
+    e.preventDefault();
+    nav.classList.toggle('VerticalNav');
+    nav_list.classList.toggle("VerticalList");
+})
+window.addEventListener("resize", function(e){
+    if (this.window.innerWidth>=768){
+        nav.classList.remove('VerticalNav');
+    nav_list.classList.remove("VerticalList");
+    }
+})
 options.push(option_1);
 options.push(option_2);
 options.push(option_3);
 options.push(option_4);
+
+
 
 let setSelected = function (option, e) {
     e.preventDefault();
