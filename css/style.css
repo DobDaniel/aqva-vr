@@ -25,7 +25,7 @@ html {
   white-space: nowrap;
   display: inline-block;
   padding: 0.75rem 1.25rem;
-  border: 4px solid #639fab;
+  border: 4px solid #639fba;
   color: #ffffff;
   text-decoration: none;
   font-size: 1rem;
@@ -56,8 +56,8 @@ html {
   white-space: nowrap;
   display: inline-block;
   padding: 0.75rem 1.25rem;
-  border: 4px solid #639fab;
-  background-color: #639fab;
+  border: 4px solid #639fba;
+  background-color: #639fba;
   color: #000000;
   text-decoration: none;
   font-size: 1rem;
@@ -293,7 +293,7 @@ body {
   text-decoration: none;
   display: inline-block;
   padding: 0.75rem 1.25rem;
-  background-color: #639fab;
+  background-color: #639fba;
   color: #000000;
   font-size: 1rem;
   font-weight: 700;
@@ -481,7 +481,7 @@ body {
 
 .StepLink {
   text-decoration: none;
-  color: #639fab;
+  color: #639fba;
   font-weight: 700;
 }
 
@@ -582,7 +582,7 @@ body {
 
 .GalleryLink:hover {
   cursor: pointer;
-  color: #639fab;
+  color: #639fba;
   font-weight: bold;
 }
 
@@ -902,7 +902,7 @@ body {
 
 .NGOList:hover {
   cursor: pointer;
-  color: #639fab;
+  color: #639fba;
 }
 
 .StaticDonation {
@@ -941,9 +941,9 @@ body {
   }
   .DonationOption:hover {
     cursor: pointer;
-    background-color: #639fab;
+    background-color: #639fba;
     color: white;
-    border: 4px solid #639fab;
+    border: 4px solid #639fba;
   }
 }
 
@@ -1048,7 +1048,7 @@ body {
 
 .DonationSubmit:hover {
   cursor: pointer;
-  background-color: #639fab;
+  background-color: #639fba;
   color: white;
 }
 
@@ -1316,7 +1316,7 @@ body {
 
 .NewsletterSubmit:hover {
   cursor: pointer;
-  background-color: #639fab;
+  background-color: #639fba;
   color: white;
 }
 
@@ -1431,8 +1431,8 @@ body {
 }
 
 .SectionLink:hover {
-  background-color: #639fab;
-  border: 4px solid #639fab;
+  background-color: #639fba;
+  border: 4px solid #639fba;
   color: #ffffff;
 }
 
