@@ -1040,7 +1040,7 @@ body {
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
   grid-gap: 1rem;
-  background-color: #639fab;
+  background-color: rgba(99, 159, 171, 0.6);
   padding: 1rem 0;
   margin-bottom: 1rem;
 }
@@ -1096,6 +1096,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
 }
 
 @media (min-width: 768px) {
