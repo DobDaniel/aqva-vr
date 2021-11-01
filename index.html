@@ -12,9 +12,11 @@
         <div class="Container">
             <header class="Header">
                 <div class="HeaderContainer">
-                    <a class="Logo" href="#">
+                    <div class="Logo">
+                    <a href="#">
                         <img src="./assets/images/Logo.svg" alt="Return to AVRA homepage." class="LogoImage" />
                     </a>
+                    </div>
                     <button class="ToggleNav">
                         <img src="./assets/images/Hamburger.svg" alt="Toggle the navigation menu." />
                     </button>
@@ -33,10 +35,10 @@
                                 <a href="#" class="NavListLink">Contact</a>
                             </li>
                             <li class="NavListItem">
-                                <a href="#" class="NavListLink LogIn ButtonSecondary">Log in</a>
+                                <a href="#" class="LogIn">Log in</a>
                             </li>
                             <li class="NavListItem">
-                                <a href="#" class="NavListLink SignUp ButtonPrimary">Sign up</a>
+                                <a href="#" class="SignUp">Sign up</a>
                             </li>
                         </ul>
                     </nav>
@@ -46,7 +48,7 @@
                 <section class="Hero">
                     <div class="HeroContainer">
                         <div class="HeroContent">
-                            <h1 class="MainHeading">See the aquatic life in front of your eyes</h1>
+                            <h1 class="MainHeading">See the aquatic life in front of your eyes &nbsp;</h1>
                             <p class="HeroText">Come explore the vast ecosystem of our breathtaking seas and oceans. See millions of species living in their habitat using our bleeding-edge VR technology, AQVA™.</p>
                             <div class="CTAContent">
                                 <a class="CTA ButtonPrimary">Register </a>
@@ -55,10 +57,10 @@
                             </div>
                         </div>
                         <picture class="HeroImage">
-                            <source media="" srcset="./assets/images/performance/FishSmall.webp" />
-                            <source media="" srcset="./assets/images/performance/FishSmall.png" />
-                            <source media="(min-width:1280px)" srcset="./assets/images/performance/FishBig.webp" />
-                            <source media="(min-width:1280px)" srcset="./assets/images/performance/FishBig.png" />
+                            <source media="(max-width:767px)" srcset="./assets/images/performance/FishSmall.webp" />
+                            <source media="(max-width:767px)" srcset="./assets/images/performance/FishSmall.png" />
+                            <source media="(min-width:768px)" srcset="./assets/images/performance/FishBig.webp" />
+                            <source media="(min-width:768px)" srcset="./assets/images/performance/FishBig.png" />
                             <img src="./assets/images/performance/FishSmall.png" alt="Beautiful pink fish." width="1008" height="768" />
                         </picture>
                     </div>
@@ -68,29 +70,29 @@
                         <h2 class="SectionTitle">How it works</h2>
                         <div class="StepsContent">
                             <div class="LeftBubbles">
-                                <img class="no-show" class="LeftBubblesImage" src="assets/images/LeftBubbles.svg" alt="" />
+                                <img class="" class="LeftBubblesImage" src="assets/images/LeftBubbles.svg" alt="" loading="lazy" />
                             </div>
                             <div class="StepsFold">
                                 <div class="Step">
-                                    <img class="StepIcon" src="assets/images/AvatarIcon.svg" alt="Avatar icon" />
+                                    <img class="StepIcon" src="assets/images/AvatarIcon.svg" alt="Avatar icon" loading="lazy"/>
                                     <h3 class="StepText">
                                         <a class="StepLink" href="#"> Create an account</a>
                                         and choose your desired plan.
                                     </h3>
                                 </div>
-                                <img class="ArrowIcon no-show" src="./assets/images/ArrowIcon.svg" alt="" />
+                                <img class="ArrowIcon" src="./assets/images/ArrowIcon.svg" alt="" loading="lazy"/>
                                 <div class="Step">
-                                    <img class="StepIcon" src="assets/images/DownloadIcon.svg" alt="Avatar icon" />
+                                    <img class="StepIcon" src="assets/images/DownloadIcon.svg" alt="Avatar icon" loading="lazy" />
                                     <h3 class="StepText">
                                         Download the AQVA application on
                                         <a class="StepLink" href="#"> Desktop </a>
                                         or
-                                        <a class="StepLink" href="#"> Mobile </a>.
+                                        <a class="StepLink" href="#"> Mobile</a>.
                                     </h3>
                                 </div>
-                                <img class="ArrowIcon no-show" src="./assets/images/ArrowIcon.svg" alt="" />
+                                <img class="ArrowIcon" src="./assets/images/ArrowIcon.svg" alt="" />
                                 <div class="Step">
-                                    <img class="StepIcon" src="assets/images/FishIcon.svg" alt="Avatar icon" />
+                                    <img class="StepIcon" src="assets/images/FishIcon.svg" alt="Avatar icon" loading="lazy"/>
                                     <h3 class="StepText">
                                         <a class="StepLink" href="#"> Log in</a>
                                         with your account and begin your experience.
@@ -98,7 +100,7 @@
                                 </div>
                             </div>
                             <div class="RightBubbles">
-                                <img class="no-show" src="assets/images/RightBubbles.svg" alt="" />
+                                <img class="" src="assets/images/RightBubbles.svg" alt="" loading="lazy"/>
                             </div>
                         </div>
                     </div>
@@ -109,43 +111,41 @@
                         <div class="GalleryContent">
                             <div class="ImageSlider">
                                 <picture class="GalleryImage">
-                                    <source srcset="assets/images/performance/Picture1Small.png" media="" />
-                                    <source srcset="assets/images/performance/Picture1Small.webp" media="" />
+                                    <source srcset="assets/images/performance/Picture1Small.png" media="(max-wdith: 1279px)" />
+                                    <source srcset="assets/images/performance/Picture1Small.webp" media="(max-wdith: 1279px)" />
                                     <source srcset="assets/images/performance/Picture1Big.png" media="(min-width: 1280px)" />
                                     <source srcset="assets/images/performance/Picture1Big.webp" media="(min-width: 1280px)" />
-                                    <img src="assets/images/performance/Picture1Small.png" alt="Beautiful landscape with coral reefs" width="1628" height="1070" />
+                                    <img src="assets/images/performance/Picture1Small.png" alt="Beautiful landscape with coral reefs" width="1628" height="1070" loading="lazy"/>
                                 </picture>
                                 <picture class="GalleryImage">
-                                    <source srcset="assets/images/performance/Picture2Small.png" media="" />
-                                    <source srcset="assets/images/performance/Picture2Small.webp" media="" />
+                                    <source srcset="assets/images/performance/Picture2Small.png" media="(max-wdith: 1279px)" />
+                                    <source srcset="assets/images/performance/Picture2Small.webp" media="(max-wdith: 1279px)" />
                                     <source srcset="assets/images/performance/Picture2Big.png" media="(min-width: 1280px)" />
                                     <source srcset="assets/images/performance/Picture2Big.webp" media="(min-width: 1280px)" />
-                                    <img src="assets/images/performance/Picture2Small.png" alt="Friendly fish looking at you" width="1746" height="1091" />
+                                    <img src="assets/images/performance/Picture2Small.png" alt="Friendly fish looking at you" width="1746" height="1091" loading="lazy"/>
                                 </picture>
                                 <picture class="GalleryImage">
-                                    <source srcset="assets/images/performance/Picture3Small.png" media="" />
-                                    <source srcset="assets/images/performance/Picture3Small.webp" media="" />
+                                    <source srcset="assets/images/performance/Picture3Small.png" media="(max-wdith: 1279px)" />
+                                    <source srcset="assets/images/performance/Picture3Small.webp" media="(max-wdith: 1279px)" />
                                     <source srcset="assets/images/performance/Picture3Big.png" media="(min-width: 1280px)" />
                                     <source srcset="assets/images/performance/Picture3Big.webp" media="(min-width: 1280px)" />
-                                    <img src="assets/images/performance/Picture3Small.png" alt="Big tortoise swimming with you" width="1704" height="998" />
+                                    <img src="assets/images/performance/Picture3Small.png" alt="Big tortoise swimming with you" width="1704" height="998" loading="lazy"/>
                                 </picture>
-                                <picture class="no-show GalleryImage">
-                                    <source srcset="assets/images/performance/Picture4Big.png" media="" />
-                                    <source srcset="assets/images/performance/Picture4Big.webp" media="" />
-                                    <img src="assets/images/performance/Picture4Small.png" alt="You can touch the jellyfish" width="1920" height="1280" />
+                                <picture class="GalleryImage NoImage">
+                                    <source srcset="assets/images/performance/Picture4Big.png" media="(min-width: 768px)" />
+                                    <source srcset="assets/images/performance/Picture4Big.webp" media="(min-width: 768px)" />
+                                    <img src="assets/images/performance/Picture4Big.png" alt="You can touch the jellyfish" width="1920" height="1280" loading="lazy"/>
                                 </picture>
-                                <picture class="no-show GalleryImage">
-                                    <source srcset="assets/images/performance/Picture5Big.png" media="" />
-                                    <source srcset="assets/images/performance/Picture5Big.webp" media="" />
-                                    <img src="assets/images/performance/Picture5Big.png" alt="Small yellow baby fish smiling" width="1920" height="1280" />
+                                <picture class="GalleryImage NoImage">
+                                    <source srcset="assets/images/performance/Picture5Big.png" media="(min-width: 768px)" />
+                                    <source srcset="assets/images/performance/Picture5Big.webp" media="(min-width: 768px)" />
+                                    <img src="assets/images/performance/Picture5Big.png" alt="Small yellow baby fish smiling" width="1920" height="1280" loading="lazy"/>
                                 </picture>
-                                <picture class="no-show GalleryImage">
-                                    <source srcset="assets/images/performance/Picture6Big.png" media="" />
-                                    <source srcset="assets/images/performance/Picture6Big.webp" media="" />
-                                    <img src="assets/images/performance/Picture6Big.png" alt="Hundreds of fish circling an amazing shark" width="1616" height="1211" />
+                                <picture class="GalleryImage NoImage">
+                                    <source srcset="assets/images/performance/Picture6Big.png" media="(min-width: 768px)" />
+                                    <source srcset="assets/images/performance/Picture6Big.webp" media="(min-width: 768px)" />
+                                    <img src="assets/images/performance/Picture6Big.png" alt="Hundreds of fish circling an amazing shark" width="1616" height="1211" loading="lazy"/>
                                 </picture>
-                                <img class="no-show" src="assets/images/LeftArrowIcon.svg" alt="" />
-                                <img class="no-show" src="assets/images/RightArrowIcon.svg" alt="" />
                             </div>
                             <a href="#" class="GalleryLink">See more pictures &rarr;</a>
                         </div>
@@ -172,9 +172,7 @@
                                 <span class="TestimonialAuthor">- Daniel Bronson, <br />SEO expert at Google </span>
                             </div>
                         </div>
-                        <img class="no-show" src="assets/images/Star.svg" alt="" />
-                        <img class="no-show" src="assets/images/Star.svg" alt="" />
-                        <img class="no-show" src="assets/images/Star.svg" alt="" />
+
                     </div>
                 </section>
                 <section class="Cause">
@@ -189,32 +187,32 @@
                                     <source srcset="./assets/images/performance/OceanaSmall.webp" media=""> -->
                                         <source srcset="./assets/images/performance/OceanaBig.png" media="" />
                                         <source srcset="./assets/images/performance/OceanaBig.webp" media="" />
-                                        <img src="./assets/images/performance/OceanaBig.png" alt="" width="204" height="41" />
+                                        <img src="./assets/images/performance/OceanaBig.png" alt="" width="204" height="41" loading="lazy"/>
                                     </picture>
                                     <picture class="OrganizationImage NRDC">
                                         <!-- <source srcset="./assets/images/performance/NRDCSmall.png" media="">
                                     <source srcset="./assets/images/performance/NRDCSmall.webp" media=""> -->
                                         <source srcset="./assets/images/performance/NRDCBig.png" media="" />
                                         <source srcset="./assets/images/performance/NRDCBig.webp" media="" />
-                                        <img src="./assets/images/performance/NRDCBig.png" alt="" width="125" height="167" />
+                                        <img src="./assets/images/performance/NRDCBig.png" alt="" width="125" height="167" loading="lazy"/>
                                     </picture>
                                     <picture class="OrganizationImage OC">
                                         <!-- <source srcset="./assets/images/performance/OceanConservancySmall.png" media="">
                                     <source srcset="./assets/images/performance/OceanConservancySmall.webp" media=""> -->
                                         <source srcset="./assets/images/performance/OceanConservancyBig.png" media="" />
                                         <source srcset="./assets/images/performance/OceanConservancyBig.webp" media="" />
-                                        <img src="./assets/images/performance/OceanConservancyBig.png" alt="" width="205" height="121" />
+                                        <img src="./assets/images/performance/OceanConservancyBig.png" alt="" width="205" height="121" loading="lazy"/>
                                     </picture>
                                     <picture class="OrganizationImage SL">
                                         <!-- <source srcset="./assets/images/performance/SeaLegacySmall.png" media="">
                                     <source srcset="./assets/images/performance/SeaLegacySmall.webp" media=""> -->
                                         <source srcset="./assets/images/performance/SeaLegacyBig.png" media="" />
                                         <source srcset="./assets/images/performance/SeaLegacyBig.webp" media="" />
-                                        <img src="./assets/images/performance/SeaLegacyBig.png" alt="" width="164" height="163" />
+                                        <img src="./assets/images/performance/SeaLegacyBig.png" alt="" width="164" height="163" loading="lazy"/>
                                     </picture>
                                 </div>
                             </div>
-                            <img class="no-show" src="assets/images/SaveIcon.svg" alt="" />
+                            <img class="SaveImage" src="assets/images/SaveIcon.svg" alt="" loading="lazy"/>
                             <div class="Donation">
                                 <h3 class="SectionSubTitle">Donate</h3>
                                 <p class="DonationText">
@@ -349,16 +347,22 @@
                             </form>
                         </div>
                     </section>
+                    <div class="Extras">
                     <section class="GetInTouch">
-                        <h2 class="SectionTitle">Get in touch with us</h2>
+                        <h2 class="ExtraSectionTitle">Get in touch with us</h2>
+                        <div class="ExtrasLinks">
                         <a class="SectionLink" href="mailto: aqva@firm.com">aqva@firm.com</a>
                         <a class="SectionLink" href="tel: 917-733-8851">tel: 917-733-8851</a>
+                        </div>
                     </section>
                     <section class="Work">
-                        <h2 class="SectionTitle">Come work with us</h2>
+                        <h2 class="ExtraSectionTitle">Come work with us</h2>
+                        <div class="ExtrasLinks">
                         <a class="SectionLink" href="mailto: aqvahire@firm.com">aqvahire@firm.com</a>
                         <a class="SectionLink" href="tel: 936-422-1237">tel: 936-422-1237</a>
+                        </div>
                     </section>
+                    </div>
                     <span class="Copyright">© 2021 aqva.vr All Rights Reserved</span>
                 </div>
             </footer>
