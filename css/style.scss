@@ -50,6 +50,28 @@ body {
         cursor: pointer;
         filter: invert(74%) sepia(78%) saturate(1735%) hue-rotate(276deg) brightness(97%) contrast(87%);
     }
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+.Nav{
+    display: none;
+    @media (min-width: 768px) {
+        display: block;
+    }
+}
+.NavList{
+    @media (min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
+}
+.NavListItem{
+    padding-right: 1rem;
+}
+.NavListLink{
+    color: $text-color;
+    text-decoration: none;
 }
 .Hero {
     margin: 2rem 0;
