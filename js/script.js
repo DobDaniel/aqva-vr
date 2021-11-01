@@ -9,7 +9,9 @@ let options = [];
 let nav = document.getElementById("nav")
 let nav_list = document.getElementById("nav-list")
 let hamburger = document.getElementById("hamburger")
-
+if ('serviceWorker' in navigator) {
+	navigator.serviceWorker.register('service-worker.js');
+}
 hamburger.addEventListener("click", function(e){
     e.preventDefault();
     nav.classList.toggle('VerticalNav');
