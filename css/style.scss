@@ -13,7 +13,7 @@ $bg-color: #000000;
 html {
     width: 100vw;
     height: 100vh;
-    max-width:100%;
+    max-width: 100%;
     overflow-x: hidden;
     font-family: "Inter", Helvetica, Arial, sans-serif;
     color: $text-color;
@@ -23,8 +23,8 @@ html {
 .no-show {
     display: none;
 }
-.LogIn{
-    margin-left: clamp(0rem,1vw,1rem);
+.LogIn {
+    margin-left: clamp(0rem, 1vw, 1rem);
     white-space: nowrap;
     display: inline-block;
     padding: 0.75rem 1.25rem;
@@ -34,21 +34,20 @@ html {
     font-size: 1rem;
     font-weight: 700;
     border-radius: 0.5rem;
-    &:hover{
+    &:hover {
         cursor: pointer;
         background-color: $main-color;
         border-color: $main-color;
         color: $text-color;
     }
-    @media (min-width: 768px){
-        font-size: clamp(1rem,2vw,1.5rem);
-
+    @media (min-width: 768px) {
+        font-size: clamp(1rem, 2vw, 1.5rem);
     }
-    @media (min-width: 1024px){
+    @media (min-width: 1024px) {
         padding: 1rem 1.5rem;
     }
 }
-.SignUp{
+.SignUp {
     white-space: nowrap;
     display: inline-block;
     padding: 0.75rem 1.25rem;
@@ -59,32 +58,30 @@ html {
     font-size: 1rem;
     font-weight: 700;
     border-radius: 0.5rem;
-    &:hover{
+    &:hover {
         cursor: pointer;
         background-color: $main-color;
         border-color: $main-color;
         color: $text-color;
     }
-    @media (min-width: 768px){
-        font-size: clamp(1rem,2vw,1.5rem);
-        
+    @media (min-width: 768px) {
+        font-size: clamp(1rem, 2vw, 1.5rem);
     }
-    @media (min-width: 1024px){
+    @media (min-width: 1024px) {
         padding: 1rem 1.5rem;
     }
-    margin-left: clamp(0rem,1vw,2rem);
+    margin-left: clamp(0rem, 1vw, 2rem);
 }
 body {
-
     width: 100vw;
     height: 100vh;
-    max-width:100%;
+    max-width: 100%;
     background-color: $bg-color;
 }
 .Header {
     margin-top: 24px;
-    @media (min-width:768px){
-        margin-top: clamp(24px,5vw,36px);
+    @media (min-width: 768px) {
+        margin-top: clamp(24px, 5vw, 36px);
     }
 }
 .HeaderContainer {
@@ -93,11 +90,11 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 20px;
-    @media (min-width:768px){
-        margin: 0 clamp(20px,4.5vw,80px);
+    @media (min-width: 768px) {
+        margin: 0 clamp(20px, 4.5vw, 80px);
     }
 }
-.Logo{
+.Logo {
     flex: 1;
 }
 .LogoImage {
@@ -106,17 +103,17 @@ body {
     // background-color: black;
     border-radius: 0.9rem;
     height: auto;
-    &:hover{
+    &:hover {
         filter: invert(56%) sepia(39%) saturate(354%) hue-rotate(142deg) brightness(95%) contrast(92%) drop-shadow(6.62498px 4.41665px 2.20833px rgba(99, 159, 171, 0.5));
     }
-    @media (min-width: 480px){
-        width: clamp(60px,8vw,135px)
+    @media (min-width: 480px) {
+        width: clamp(60px, 8vw, 135px);
     }
 }
 .ToggleNav {
     background: none;
     border: none;
-    &:hover{
+    &:hover {
         cursor: pointer;
         // filter: invert(74%) sepia(78%) saturate(1735%) hue-rotate(276deg) brightness(97%) contrast(87%);
     }
@@ -125,68 +122,63 @@ body {
     }
 }
 
-.NavList{
-    
+.NavList {
     display: none;
-    
+
     @media (min-width: 768px) {
         display: flex;
-        
+
         align-items: center;
         justify-content: space-between;
-        
     }
 }
-.VerticalList{
+.VerticalList {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 1rem;
 }
-.VerticalNav{
+.VerticalNav {
     width: 100%;
-
 }
-.NavListItem{
+.NavListItem {
     margin: 1rem 0;
 }
-.NavListLink{
+.NavListLink {
     white-space: nowrap;
     color: $text-color;
     text-decoration: none;
     padding: 1rem 0;
-    &:hover{
+    &:hover {
         cursor: pointer;
         color: $main-color;
     }
     font-size: 1rem;
-    @media (min-width: 768px){
-        font-size: clamp(1rem,2vw,1.5rem);
-        padding: 2rem clamp(0rem,1vw,2rem);
-        &:hover{
+    @media (min-width: 768px) {
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        padding: 2rem clamp(0rem, 1vw, 2rem);
+        &:hover {
             border-bottom: 4px solid $main-color;
         }
     }
-    @media (min-width: 1440px){
-    
+    @media (min-width: 1440px) {
     }
 }
 .Hero {
     margin: 2rem 0;
-    @media (min-width:768px){
-        margin: clamp(2rem,4vw,4rem) 0;
+    @media (min-width: 768px) {
+        margin: clamp(2rem, 4vw, 4rem) 0;
     }
 }
 .HeroContainer {
     margin: 0 20px;
-    @media (min-width:768px){
+    @media (min-width: 768px) {
         display: flex;
-        margin: 0 clamp(20px,4.5vw,80px);
+        margin: 0 clamp(20px, 4.5vw, 80px);
     }
-
 }
-.HeroContent{
-    @media (min-width:768px){
+.HeroContent {
+    @media (min-width: 768px) {
         flex: 1;
     }
 }
@@ -196,9 +188,9 @@ body {
     margin-bottom: 1rem;
     font-size: 2rem;
     font-weight: 700;
-    @media(min-width: 480px){
-        font-size: clamp(2rem,5vw,4.5rem);
-        margin-bottom: clamp(1rem,4vw,3rem);
+    @media (min-width: 480px) {
+        font-size: clamp(2rem, 5vw, 4.5rem);
+        margin-bottom: clamp(1rem, 4vw, 3rem);
     }
 }
 .HeroText {
@@ -206,9 +198,9 @@ body {
     margin-bottom: 1.5rem;
     font-size: 1rem;
     font-weight: 200;
-    @media(min-width: 480px){
-        font-size: clamp(1rem,2.5vw,2.25rem);
-        margin-bottom: clamp(1rem,4vw,2rem);
+    @media (min-width: 480px) {
+        font-size: clamp(1rem, 2.5vw, 2.25rem);
+        margin-bottom: clamp(1rem, 4vw, 2rem);
     }
 }
 .CTAContent {
@@ -223,15 +215,15 @@ body {
     font-size: 1rem;
     font-weight: 700;
     border-radius: 0.5rem;
-    &:hover{
+    &:hover {
         cursor: pointer;
         background-color: $main-color;
         color: $text-color;
     }
-    @media(min-width: 480px){
-        font-size: clamp(1rem,1.35vw,1.5rem);
+    @media (min-width: 480px) {
+        font-size: clamp(1rem, 1.35vw, 1.5rem);
     }
-    @media (min-width: 1024px){
+    @media (min-width: 1024px) {
         padding: 1.25rem 1.5rem;
     }
 }
@@ -240,73 +232,72 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    @media (min-width:768px){
+    @media (min-width: 768px) {
         flex: 1;
     }
 }
 .HeroImage img {
     width: 301px;
     height: auto;
-    @media (min-width: 480px){
+    @media (min-width: 480px) {
         flex: 0.75;
     }
-    @media (min-width:768px){
+    @media (min-width: 768px) {
         flex: 1;
     }
 }
 
 .StepsContainer {
     margin: 0 20px;
-    @media (min-width:768px){
-        margin: 0 clamp(20px,4.5vw,80px);
+    @media (min-width: 768px) {
+        margin: 0 clamp(20px, 4.5vw, 80px);
     }
 }
 .SectionTitle {
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 2rem;
-    @media(min-width: 480px){
-        font-size: clamp(1.25rem,2.7vw,3rem);
-        margin-bottom: clamp(2rem,5vw,5rem);
-        margin-top: clamp(0rem,5vw,5rem);
+    @media (min-width: 480px) {
+        font-size: clamp(1.25rem, 2.7vw, 3rem);
+        margin-bottom: clamp(2rem, 5vw, 5rem);
+        margin-top: clamp(0rem, 5vw, 5rem);
     }
 }
-.LeftBubbles{
+.LeftBubbles {
     display: none;
-    @media(min-width: 768px){
+    @media (min-width: 768px) {
         display: block;
     }
 }
-.LeftBubbles img{
-    width: clamp(120px,10vw,180px);
+.LeftBubbles img {
+    width: clamp(120px, 10vw, 180px);
     height: auto;
 }
-.RightBubbles{
+.RightBubbles {
     display: none;
-    @media(min-width: 768px){
+    @media (min-width: 768px) {
         display: block;
     }
 }
-.RightBubbles img{
-    width: clamp(120px,10vw,180px);
+.RightBubbles img {
+    width: clamp(120px, 10vw, 180px);
     height: auto;
 }
 .StepsContent {
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
-    @media(min-width: 768px){
+    @media (min-width: 768px) {
         grid-template-columns: auto auto auto;
         column-gap: 2rem;
         place-items: center;
     }
-    
 }
-.ArrowIcon{
+.ArrowIcon {
     display: none;
-    @media (min-width: 1024px){
+    @media (min-width: 1024px) {
         display: block;
-        width: clamp(20px,2vw,60px);
+        width: clamp(20px, 2vw, 60px);
         align-self: center;
         margin-bottom: 3rem;
     }
@@ -324,16 +315,16 @@ body {
     padding-right: 1rem;
     width: 40px;
     height: auto;
-    @media (min-width: 768px){
-        width: clamp(40px,5vw,80px);
-        padding-right: clamp(1rem,3vw,4rem);
+    @media (min-width: 768px) {
+        width: clamp(40px, 5vw, 80px);
+        padding-right: clamp(1rem, 3vw, 4rem);
     }
 }
 .StepLink {
     text-decoration: none;
     color: $secondary-color;
     font-weight: 700;
-    &:hover{
+    &:hover {
         cursor: pointer;
         color: $main-color;
     }
@@ -342,8 +333,8 @@ body {
 .StepText {
     font-size: 1rem;
     line-height: 1.375rem;
-    @media(min-width: 480px){
-        font-size: clamp(1rem,2vw,2.25rem);
+    @media (min-width: 480px) {
+        font-size: clamp(1rem, 2vw, 2.25rem);
     }
 }
 .Gallery {
@@ -356,15 +347,15 @@ body {
 .ImageSlider {
     display: grid;
     place-items: center;
-    @media (min-width: 768px){
+    @media (min-width: 768px) {
         grid-template-columns: 1fr 1fr;
-        row-gap: clamp(0px,5vw,4rem);
+        row-gap: clamp(0px, 5vw, 4rem);
     }
 }
 .GalleryContainer {
     margin: 0 20px;
-    @media (min-width:768px){
-        margin: 0 clamp(20px,4.5vw,80px);
+    @media (min-width: 768px) {
+        margin: 0 clamp(20px, 4.5vw, 80px);
     }
 }
 
@@ -374,16 +365,15 @@ body {
     border-radius: 0.25rem;
     margin-bottom: 2rem;
     @media (min-width: 480px) {
-        width: clamp(280px,60vw,1600px);
+        width: clamp(280px, 60vw, 1600px);
         height: auto;
-
     }
     @media (min-width: 768px) {
-        width: clamp(280px,40vw,1600px);
-        aspect-ratio: 1.6; 
+        width: clamp(280px, 40vw, 1600px);
+        aspect-ratio: 1.6;
     }
 }
-.NoImage{
+.NoImage {
     display: none;
     @media (min-width: 768px) {
         display: block;
@@ -406,8 +396,8 @@ body {
 }
 .TestimonialsContainer {
     margin: 0 20px;
-    @media (min-width:768px){
-        margin: 0 clamp(20px,4.5vw,80px);
+    @media (min-width: 768px) {
+        margin: 0 clamp(20px, 4.5vw, 80px);
     }
 }
 .Testimonial {
@@ -418,13 +408,12 @@ body {
 .TestimonialsGrid {
     display: grid;
     grid-template-columns: 1fr;
-    
-    @media(min-width: 480px){
+
+    @media (min-width: 480px) {
         grid-template-columns: 1fr 1fr;
         column-gap: 1.5rem;
-
     }
-    @media(min-width: 768px){
+    @media (min-width: 768px) {
         grid-template-columns: 1fr 1fr;
         column-gap: 3rem;
         row-gap: 3rem;
@@ -436,9 +425,9 @@ body {
     line-height: 125%;
     font-weight: 200;
     margin-bottom: 0.5rem;
-    @media(min-width: 480px){
-        font-size: clamp(1rem,2vw,2rem);
-        margin-bottom: clamp(0.5rem,2vw,1.5rem);
+    @media (min-width: 480px) {
+        font-size: clamp(1rem, 2vw, 2rem);
+        margin-bottom: clamp(0.5rem, 2vw, 1.5rem);
     }
 }
 .TestimonialAuthor {
@@ -446,45 +435,44 @@ body {
     line-height: 125%;
     font-weight: 200;
     text-align: right;
-    @media(min-width: 480px){
-        font-size: clamp(1rem,2vw,2rem);
+    @media (min-width: 480px) {
+        font-size: clamp(1rem, 2vw, 2rem);
     }
 }
 .CauseContainer {
     margin: 0 20px;
-    @media (min-width:768px){
-        margin: 0 clamp(20px,4.5vw,80px);
+    @media (min-width: 768px) {
+        margin: 0 clamp(20px, 4.5vw, 80px);
     }
 }
-.CauseContent{
-    @media(min-width: 768px){
+.CauseContent {
+    @media (min-width: 768px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 3rem;
     }
-    @media(min-width: 1280px){
+    @media (min-width: 1280px) {
         grid-template-columns: 1.2fr 0.6fr 1.2fr;
         column-gap: 2rem;
     }
 }
-.SaveImage{
+.SaveImage {
     display: none;
-    @media(min-width: 1280px){
-    display: block;
-        width: clamp(180px,20vw,240px);
-    
-    justify-self: center;
+    @media (min-width: 1280px) {
+        display: block;
+        width: clamp(180px, 20vw, 240px);
+
+        justify-self: center;
     }
-    
 }
-.Organizations{
+.Organizations {
     display: flex;
     flex-direction: column;
-    @media(min-width: 480px){
+    @media (min-width: 480px) {
         flex-direction: row;
         align-items: center;
     }
-    @media(min-width: 768px){
+    @media (min-width: 768px) {
         flex-direction: column;
         flex: 1;
     }
@@ -493,11 +481,11 @@ body {
     line-height: 125%;
     font-weight: 200;
     font-size: 1rem;
-    @media(min-width: 480px){
-        font-size: clamp(1rem,2vw,1.5rem);
-        flex: 1;   
+    @media (min-width: 480px) {
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        flex: 1;
     }
-    @media(min-width: 768px){
+    @media (min-width: 768px) {
         flex: 0;
     }
 }
@@ -513,19 +501,18 @@ body {
     row-gap: 2rem;
     border-radius: 0.5rem;
     width: 300px;
-    @media(min-width: 480px) and (max-width: 768px){
+    @media (min-width: 480px) and (max-width: 768px) {
         flex-direction: row;
         align-items: center;
         flex: 1;
         row-gap: 0.5rem;
         margin-left: 1.5rem;
-        
     }
-    @media(min-width: 768px){
+    @media (min-width: 768px) {
         margin-top: clamp(1rem, 4vw, 3rem);
-        width: clamp(300px,40vw,450px);
-        padding: clamp(1rem,4vw,4rem) 0;
-        img{
+        width: clamp(300px, 40vw, 450px);
+        padding: clamp(1rem, 4vw, 4rem) 0;
+        img {
             transform: scale(1.25);
         }
     }
@@ -553,14 +540,14 @@ body {
     color: $main-color;
     font-weight: 700;
     font-size: 1.25rem;
-    @media(min-width: 768px){
-        font-size: clamp(1.25rem,2vw,2.25rem)
+    @media (min-width: 768px) {
+        font-size: clamp(1.25rem, 2vw, 2.25rem);
     }
     margin-bottom: 1rem;
 }
 .Donation {
     margin-top: 2rem;
-    @media(min-width: 768px){
+    @media (min-width: 768px) {
         margin-top: 0rem;
         flex: 1;
     }
@@ -569,9 +556,9 @@ body {
     font-size: 1rem;
     line-height: 125%;
     font-weight: 200;
-    margin-bottom: clamp(1rem,4vw,1.75rem);
-    @media(min-width: 480px){
-        font-size: clamp(1rem,2vw,1.5rem);
+    margin-bottom: clamp(1rem, 4vw, 1.75rem);
+    @media (min-width: 480px) {
+        font-size: clamp(1rem, 2vw, 1.5rem);
     }
 }
 .DonationContent {
@@ -581,9 +568,9 @@ body {
 .DonationLabel {
     font-size: 1rem;
     line-height: 125%;
-    margin-bottom: clamp(1rem,4vw,1.75rem);
-    @media(min-width: 480px){
-        font-size: clamp(1rem,2.5vw,1.5rem);
+    margin-bottom: clamp(1rem, 4vw, 1.75rem);
+    @media (min-width: 480px) {
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
     }
 }
 .NGOList {
@@ -599,7 +586,7 @@ body {
 .StaticDonation {
     display: flex;
     justify-content: space-between;
-    @media (min-width: 480px) and (max-width:768px){
+    @media (min-width: 480px) and (max-width: 768px) {
         justify-content: space-evenly;
     }
     margin: 1rem 0;
@@ -613,18 +600,17 @@ body {
     border: 4px solid $main-color;
     border-radius: 0.5rem;
     font-weight: 700;
-    @media(min-width: 480px){
-        font-size: clamp(1rem,1.25vw,1.5rem);
-        width: clamp(58px,6vw,140px);
-        height: clamp(37px,5vw,60px);
+    @media (min-width: 480px) {
+        font-size: clamp(1rem, 1.25vw, 1.5rem);
+        width: clamp(58px, 6vw, 140px);
+        height: clamp(37px, 5vw, 60px);
         &:hover {
-                cursor: pointer;
-                background-color: $secondary-color;
-                color: white;
-                border: 4px solid $secondary-color;
-            }
+            cursor: pointer;
+            background-color: $secondary-color;
+            color: white;
+            border: 4px solid $secondary-color;
+        }
     }
-
 }
 .SelectedOption {
     background-color: $main-color;
@@ -633,8 +619,8 @@ body {
 
 .AlternativeDonationText {
     align-self: center;
-    margin-bottom: clamp(1rem,4vw,1.75rem);
-    font-size: clamp(1rem,2vw,1.5rem);
+    margin-bottom: clamp(1rem, 4vw, 1.75rem);
+    font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 .CustomDonation {
@@ -649,9 +635,9 @@ body {
     width: 100%;
     height: 50px;
     font-size: 1rem;
-    @media(min-width: 480px){
-        font-size: clamp(1rem,2.5vw,1.5rem);
-        height: clamp(50px,6vw,80px);
+    @media (min-width: 480px) {
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+        height: clamp(50px, 6vw, 80px);
     }
     font-weight: bold;
     border: 4px solid $main-color;
@@ -679,10 +665,10 @@ body {
     align-self: center;
     margin-bottom: 2rem;
     font-size: 1rem;
-    @media(min-width: 480px){
-        font-size: clamp(1rem,2.5vw,1.5rem);
-        width: clamp(130px,10vw,300px);
-        height: clamp(50px,5vw,90px);
+    @media (min-width: 480px) {
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+        width: clamp(130px, 10vw, 300px);
+        height: clamp(50px, 5vw, 90px);
     }
     font-weight: 700;
     &:hover {
@@ -696,15 +682,14 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     grid-gap: 1rem;
-    
+
     background-color: rgba(99, 159, 171, 0.6);
     padding: 1rem 0;
     margin-bottom: 1rem;
-    @media (min-width: 768px){
+    @media (min-width: 768px) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 0;
         padding: 2rem 0;
-
     }
 }
 .StatItem {
@@ -713,28 +698,27 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 1rem;
-    @media(min-width: 480px){
-        font-size: clamp(1rem,2.5vw,1.5rem);
+    @media (min-width: 480px) {
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
     }
 }
 .FooterContainer {
     margin: 0 20px;
-    @media (min-width:768px){
-        margin: clamp(1rem,4vw,4rem) clamp(20px,4.5vw,80px);
+    @media (min-width: 768px) {
+        margin: clamp(1rem, 4vw, 4rem) clamp(20px, 4.5vw, 80px);
     }
 }
 .FooterSection {
     margin: 1rem 0;
-    
 }
 .FooterGrid {
     display: grid;
     grid-template-columns: 1fr;
     column-gap: 2rem;
-    @media(min-width: 768px){
+    @media (min-width: 768px) {
         grid-template-columns: 1fr 1fr;
     }
-    @media(min-width: 1024px){
+    @media (min-width: 1024px) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
@@ -743,23 +727,22 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    @media(min-width:768px){
+    @media (min-width: 768px) {
         align-items: flex-start;
     }
 }
 .FooterHeading {
     text-align: center;
     font-size: 1.25rem;
-    @media(min-width:768px){
-        font-size: clamp(1.25rem,2vw,2.25rem);
+    @media (min-width: 768px) {
+        font-size: clamp(1.25rem, 2vw, 2.25rem);
         text-align: left;
     }
     font-weight: 700;
-    margin-bottom: clamp(1rem,4vw,1.75rem);
+    margin-bottom: clamp(1rem, 4vw, 1.75rem);
 }
 .FooterItem {
-    margin-bottom: clamp(0.5rem,4vw,1.25rem);
-    
+    margin-bottom: clamp(0.5rem, 4vw, 1.25rem);
 }
 .FooterLink {
     color: $text-color;
@@ -767,11 +750,10 @@ body {
     font-weight: 200;
     font-size: 1rem;
     line-height: 125%;
-    @media(min-width:768px){
-        font-size: clamp(1rem,2vw,1.5rem);
-        
+    @media (min-width: 768px) {
+        font-size: clamp(1rem, 2vw, 1.5rem);
     }
-    &:hover{
+    &:hover {
         color: $main-color;
     }
 }
@@ -780,7 +762,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media(min-width:768px){
+    @media (min-width: 768px) {
         align-items: flex-start;
     }
     justify-content: center;
@@ -788,20 +770,20 @@ body {
 }
 .NewsletterTitle {
     font-size: 1.25rem;
-    @media(min-width:768px){
-        font-size: clamp(1.25rem,2vw,2.25rem);
+    @media (min-width: 768px) {
+        font-size: clamp(1.25rem, 2vw, 2.25rem);
     }
     font-weight: 700;
-    margin-bottom: clamp(1rem,4vw,1.75rem);
+    margin-bottom: clamp(1rem, 4vw, 1.75rem);
 }
 .NewsletterHeading {
     align-self: flex-start;
     font-size: 1rem;
     line-height: 125%;
     font-weight: 200;
-    margin-bottom: clamp(1rem,4vw,1.75rem);
-    @media(min-width:768px){
-        font-size: clamp(1rem,2vw,1.5rem);
+    margin-bottom: clamp(1rem, 4vw, 1.75rem);
+    @media (min-width: 768px) {
+        font-size: clamp(1rem, 2vw, 1.5rem);
     }
 }
 .NewsletterEmail {
@@ -825,9 +807,9 @@ body {
     &:focus {
         outline: none;
     }
-    @media(min-width: 480px){
-        font-size: clamp(1rem,2.5vw,1.5rem);
-        height: clamp(50px,6vw,80px);
+    @media (min-width: 480px) {
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+        height: clamp(50px, 6vw, 80px);
     }
 }
 .NewsletterSubmit {
@@ -845,40 +827,37 @@ body {
         background-color: $secondary-color;
         color: white;
     }
-    @media(min-width: 480px){
-        font-size: clamp(1rem,2.5vw,1.5rem);
-        height: clamp(50px,5vw,90px);
+    @media (min-width: 480px) {
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+        height: clamp(50px, 5vw, 90px);
     }
 }
-.Extras{
-    @media (min-width: 768px){
+.Extras {
+    @media (min-width: 768px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    @media (min-width: 1024px){
+    @media (min-width: 1024px) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
-.GetInTouch{
-
-        @media (min-width: 1024px){
-    grid-column-start: 1;
+.GetInTouch {
+    @media (min-width: 1024px) {
+        grid-column-start: 1;
     }
 }
-.Work{
-
-    @media (min-width: 1024px){
-    grid-column-start: 3;
-        }
+.Work {
+    @media (min-width: 1024px) {
+        grid-column-start: 3;
+    }
 }
-.ExtrasLinks{
+.ExtrasLinks {
     display: flex;
     flex-direction: column;
-    @media (min-width: 1024px){
+    @media (min-width: 1024px) {
         display: flex;
-    flex-direction: row;
-
+        flex-direction: row;
     }
 }
 .GetInTouch,
@@ -887,44 +866,43 @@ body {
     flex-direction: column;
     align-items: center;
     margin-bottom: 1rem;
-    @media(min-width: 768px){
+    @media (min-width: 768px) {
         align-items: flex-start;
         margin-top: 2rem;
     }
-
 }
 .SectionLink {
     box-sizing: border-box;
     text-align: center;
     border: 4px solid $main-color;
-   
+
     margin-bottom: 1rem;
     border-radius: 0.5rem;
     background-color: inherit;
     width: 187px;
     padding: 1rem 0;
     font-size: 1rem;
-    @media(min-width:768px){
-        font-size: clamp(1rem,1.8vw,1.5rem);
-        width: clamp(187px,20vw,320px);
+    @media (min-width: 768px) {
+        font-size: clamp(1rem, 1.8vw, 1.5rem);
+        width: clamp(187px, 20vw, 320px);
         margin-right: 2rem;
     }
     font-weight: 700;
     text-decoration: none;
     color: $text-color;
-    &:hover{
+    &:hover {
         background-color: $secondary-color;
         border: 4px solid $secondary-color;
         color: $text-color;
     }
 }
-.ExtraSectionTitle{
+.ExtraSectionTitle {
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 2rem;
-    @media(min-width: 480px){
-        font-size: clamp(1.25rem,2.7vw,2.25rem);
-        margin-bottom: clamp(2rem,4vw,3.5rem);
+    @media (min-width: 480px) {
+        font-size: clamp(1.25rem, 2.7vw, 2.25rem);
+        margin-bottom: clamp(2rem, 4vw, 3.5rem);
         margin-top: 1rem;
     }
 }
@@ -933,8 +911,8 @@ body {
     width: 100%;
     text-align: center;
     padding-bottom: 2rem;
-    @media(min-width: 480px){
-        font-size: clamp(1rem,2.5vw,1.5rem);
+    @media (min-width: 480px) {
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
         padding-top: 3.25rem;
         padding-bottom: 4.25rem;
     }
